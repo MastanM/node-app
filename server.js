@@ -8,8 +8,9 @@ const HOST = '0.0.0.0';
 
 // App
 const app = express();
+app.use(express.static('./assets/'));
 app.get('/', (req, res) => {
-  res.send('<h1 style="color:green;">Welcome to Cloud4C AWS CICD Automation - AWS CodePipeline - ECR -ECS Fargate!!</h1> \n');
+  res.sendFile('index.html');
 });
 
 app.listen(PORT, HOST);

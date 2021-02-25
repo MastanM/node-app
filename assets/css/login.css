@@ -1,0 +1,113 @@
+/*user profile box*/
+
+.login-container {
+    background-color: #fff;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-login {
+    color: #fff;
+    background-color: #0025c9;
+    border-color: #0025c9;
+}
+.login-body .form-control {
+    border-radius: 0;
+    color: #060000;
+}
+
+
+.nav-inline .nav-item, .nav-link {
+    display: inline-block;
+}
+
+
+.nav.nav-tabs.nav-top-border .nav-item a.nav-link.active {
+    border-top: 3px solid #0025c9 !important;
+    color: #0025c9 !important;
+}
+.nav.nav-tabs.nav-top-border .nav-item a {
+    color: #0025c9 !important;
+}
+
+.card-block {
+    padding: 1rem;
+}
+
+
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.no-gutters>.col,.no-gutters>[class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+@media (max-width: 767px) {
+    .login-container {
+        position: absolute;
+        width: 100%;
+        top: 0;
+    }
+    .login-banner {
+        height: 88vh;
+    }
+}
+
+.header-navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.82);
+}
+
+.navbar-brand {
+    padding: 9px 0px !important;
+}
+
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 100%;
+    height: 100%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: rgba(215, 233, 243, 0.68) !important;
+    -webkit-transition-delay: 99999s;
+    background-image: rgba(215, 233, 243, 0.68);
+    color:#000;
+    
+}
+
+.form-control:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 100px white inset;
+  -webkit-transition-delay: 99s;
+  background-image: rgba(215, 233, 243, 0.68);
+  background: rgba(215, 233, 243, 0.68);
+  color:#000;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: black;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: black;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: black;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: black;
+  }
+  ::placeholder {
+    color: black;
+  }
+
+  .header-navbar.navbar-dark {
+    background: #0025c9;
+}

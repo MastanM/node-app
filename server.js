@@ -10,7 +10,7 @@ const HOST = '0.0.0.0';
 const app = express();
 app.use(express.static('./assets/'));
 app.get('/', (req, res) => {
-  res.sendFile('index.html');
+  res.sendFile('./index.html');
 });
 
 app.listen(PORT, HOST);

@@ -1,16 +1,18 @@
 'use strict';
 
 const express = require('express');
-
+const path = require('path');
 // Constants
-const PORT = 8080;
+const PORT = 9001;
 const HOST = '0.0.0.0';
 
 // App
 const app = express();
-app.use(express.static('./assets/'));
+
+const publicDirectoryPath = path.join(__dirname, '/assets');
+app.use(express.static(publicDirectoryPath));
 app.get('/', (req, res) => {
-  res.sendFile('index.html', { root: __dirname });
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.listen(PORT, HOST);
